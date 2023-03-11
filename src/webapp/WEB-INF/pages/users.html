@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <!--    Никак не могу подключить css ='(-->
+
+  <link rel="stylesheet" type="text/css" href="/res/css/users.css" th:href="@{../res/css/users.css}" media="all">
+  <script src="/res/js/users.js" th:src="@{../res/js/users.js}" defer></script>
+
+</head>
+<body>
+<div style="padding-left:305px;display: inline-grid;">
+  <table class="table">
+    <tbody>
+    <tr>
+      <th>id</th>
+      <th>Name</th>
+      <th>LastName</th>
+      <th>Age</th>
+      <th>Edit</th>
+      <th>Remove</th>
+    </tr>
+    <tr th:each="user: ${users}">
+      <td class="user_id" th:text="${user.getId()}">id</td>
+      <td class="name" contenteditable="true" th:text="${user.getName()}">model</td>
+      <td class="last_name" contenteditable="true" th:text="${user.getLastName()}">series</td>
+      <td class="age" contenteditable="true" th:text="${user.getAge()}">series</td>
+      <td class="save"><button class="save_btn">Save</button></td>
+      <td class="remove"><button class="remove_btn" th:user_id="${user.getId()}">Remove</button></td>
+    </tr>
+    </tbody>
+  </table>
+<br/>
+  <hr/>
+<form action="/users/new" method="POST" style="
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+">
+
+  <label> Name:
+    <input name="name">
+  </label>
+
+  <br/>
+
+  <label> Lastname:
+    <input name="lastName">
+  </label>
+
+  <br/>
+
+  <label> Age:
+    <input name="age">
+  </label>
+  <br/>
+  <input type="submit" value="Add user" />
+
+</form>
+</div>
+</body>
+</html>
