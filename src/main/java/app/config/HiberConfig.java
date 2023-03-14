@@ -18,7 +18,7 @@ import java.util.Properties;
 @Configuration
 @PropertySource("classpath:db.properties")
 @EnableTransactionManagement
-@ComponentScan("app")
+@ComponentScan("app") // ?? Как указать, чтобы в директории java искал?
 public class HiberConfig {
 
     @Resource

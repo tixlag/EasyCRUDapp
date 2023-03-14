@@ -18,14 +18,9 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 @ComponentScan("app")
 public class  WebConfig implements WebMvcConfigurer {
 
-    @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        WebMvcConfigurer.super.addResourceHandlers(registry);
-        registry.addResourceHandler("/content/**", "/res/**").addResourceLocations("/WEB-INF/content/", "/res/");
-        registry.addResourceHandler("/js/**").addResourceLocations("/js/**");
-    }
-
+    // ??? Почему нет аннотации @Autowiring
     private final ApplicationContext applicationContext;
+
 
     public WebConfig(ApplicationContext applicationContext) {
         this.applicationContext = applicationContext;
@@ -57,10 +52,18 @@ public class  WebConfig implements WebMvcConfigurer {
         ThymeleafViewResolver resolver = new ThymeleafViewResolver();
         resolver.setTemplateEngine(templateEngine());
         registry.viewResolver(resolver);
+    }
 
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        // ??? А этот super у кого метод вызывает? Что это вообще за конструкция?
+        WebMvcConfigurer.super.addResourceHandlers(registry);
+        registry.addResourceHandler("/content/**", "/res/**").addResourceLocations("/WEB-INF/content/", "/res/");
+        registry.addResourceHandler("/js/**").addResourceLocations("/js/**");
     }
 
     // Никак не могу подключить css ='(
+    // Уже разобрался
 
 //    @Override
 //    public void addResourceHandlers(ResourceHandlerRegistry registry) {

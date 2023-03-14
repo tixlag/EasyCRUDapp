@@ -21,10 +21,13 @@ public class UsersController {
         return "users";
     }
 
+    // ??? @RequestBody не работает у меня никак
+
     @PostMapping("/new")
     public String addUser(@RequestParam("name") String name,
                           @RequestParam("lastName") String lastName,
-                          @RequestParam("age") byte age) {
+                          @RequestParam("age") byte age, ModelMap model) {
+        // ??? Это плохо, что я здесь из модели юзера создаю?
         userService.add(new User(name, lastName, age));
         return "redirect:/users/";
     }
