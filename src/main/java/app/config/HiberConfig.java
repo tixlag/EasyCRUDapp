@@ -14,6 +14,7 @@ import javax.annotation.Resource;
 import javax.sql.DataSource;
 import java.util.Properties;
 
+// ??? Соединения с бд закрывать не нужно? Почему?
 
 @Configuration
 @PropertySource("classpath:db.properties")

@@ -9,29 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85740794-f79b-4d62-88f3-1d44395de0bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/config/AppInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/config/HiberConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/controller/UsersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/dao/UserDaoImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/service/UserServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/hello.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/users.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/res/css/users.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/res/js/users.js" afterDir="false" />
+    <list default="true" id="85740794-f79b-4d62-88f3-1d44395de0bb" name="Changes" comment="Добавил комменты-вопросы">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/config/HiberConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/config/HiberConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/UserDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/service/UserServiceImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +39,8 @@
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -81,7 +66,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/79144/IdeaProjects/EasyCRUDapp/src/webapp/WEB-INF/content",
+    "last_opened_file_path": "C:/Users/79144/IdeaProjects/PP_2_2_2_spring-mvc",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -90,6 +75,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "spring.configuration.checksum": "8d40e150216b2672a24d1818cb8cc832",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -123,17 +109,8 @@
     <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration default="true" type="TomeeConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings />
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
     </configuration>
     <configuration name="Tomcat 8.5.39" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.39" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER" value="false" />
@@ -225,12 +202,14 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="HTTP Request.generated-requests | #3" />
       <item itemvalue="HTTP Request.generated-requests | #1" />
       <item itemvalue="HTTP Request.generated-requests | #2" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.39" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #3" />
         <item itemvalue="HTTP Request.generated-requests | #1" />
         <item itemvalue="HTTP Request.generated-requests | #2" />
       </list>
@@ -245,11 +224,25 @@
       <option name="presentableId" value="Default" />
       <updated>1678468482167</updated>
       <workItem from="1678468483594" duration="46632000" />
+      <workItem from="1678607223208" duration="10216000" />
+      <workItem from="1679198776925" duration="5358000" />
     </task>
+    <task id="LOCAL-00001" summary="Добавил комменты-вопросы">
+      <created>1678815512626</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678815512626</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Добавил комменты-вопросы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил комменты-вопросы" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -261,13 +254,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/app/dao/UserDaoImp.java</url>
-          <line>26</line>
+          <line>24</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/app/controller/UsersController.java</url>
-          <line>40</line>
+          <line>43</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/controller/UsersController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

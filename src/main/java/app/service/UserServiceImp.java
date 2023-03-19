@@ -13,26 +13,28 @@ import java.util.List;
 @Transactional
 public class UserServiceImp implements UserService {
 
+    private final UserDao userDao;
+
     @Autowired
-    UserDao userDao;
+    public UserServiceImp(UserDao userDao) {
+        this.userDao = userDao;
+    }
+
     @Override
     public void add(User user) {
         userDao.add(user);
     }
 
     @Override
+    @Transactional(readOnly = true)
     public User get(int id) {
         return userDao.get(id);
     }
 
     @Override
+    @Transactional(readOnly = true)
     public List<User> getAll() {
         return userDao.getAll();
-    }
-
-    @Override
-    public void edit(Long id, User user) {
-        userDao.edit(id, user);
     }
 
     @Override
